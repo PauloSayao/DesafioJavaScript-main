@@ -31,9 +31,6 @@ function GetCarArrPosition(arr, carClass) {
 }
 
 function SetCarToCompare(el, carClass) {
-    console.log("text")
-
-
     if (carClass instanceof Car) {
         if (el.checked) {
             carArr.push(carClass)
@@ -50,7 +47,6 @@ function SetCarToCompare(el, carClass) {
             })
         } else {
             document.querySelectorAll(".checkbox").forEach(element => {
-
                 element.removeAttribute("disabled")
             });
         }
