@@ -122,8 +122,8 @@ button {
     color: #fff;
     border: 0px;
     border-radius: 10px;
+    cursor: pointer;
 }
-
 #carousel{
     display: inline-block;
     text-align: center;

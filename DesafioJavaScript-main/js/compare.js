@@ -1,4 +1,3 @@
-
 //car
 let carArr = [];
 
@@ -73,5 +72,20 @@ function HideCompare() {
 }
 
 function UpdateCompareTable() {
-
+    for (let i = 0; i < carArr.length; i++) {
+        
+        let comparecarro = carArr[i];
+       
+        document.querySelector(`#compare_image_${i}`).innerHTML = `<img src="${comparecarro.image}" alt="${comparecarro.nome}">`
+        document.querySelector(`#compare_modelo_${i}`).innerHTML = comparecarro.nome;
+        document.querySelector(`#compare_alturacacamba_${i}`).innerHTML = comparecarro.alturaCacamba;
+        document.querySelector(`#compare_alturaveiculo_${i}`).innerHTML = comparecarro.alturaVeiculo;
+        document.querySelector(`#compare_alturasolo_${i}`).innerHTML = comparecarro.alturaSolo;
+        document.querySelector(`#compare_capacidadecarga_${i}`).innerHTML = comparecarro.capacidadeCarga;
+        document.querySelector(`#compare_motor_${i}`).innerHTML = comparecarro.motor;
+        document.querySelector(`#compare_potencia_${i}`).innerHTML = comparecarro.potencia;
+        document.querySelector(`#compare_volumecacamba_${i}`).innerHTML = comparecarro.volumeCacamba;
+        document.querySelector(`#compare_roda_${i}`).innerHTML = comparecarro.roda;
+        document.querySelector(`#compare_preco_${i}`).innerHTML = (comparecarro.preco).toLocaleString('pt-BR',{ style:'currency',currency:'BRL'});
+    }
 }
