@@ -89,3 +89,4 @@ function UpdateCompareTable() {
         document.querySelector(`#compare_preco_${i}`).innerHTML = (comparecarro.preco).toLocaleString('pt-BR',{ style:'currency',currency:'BRL'});
     }
 }
+
