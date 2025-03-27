@@ -41,6 +41,7 @@ function Enviar(pessoa) {
 
     if (nome != "") {
         alert(`Obrigado sr(a) ${pessoa.nome} os seus dados foram encaminhados com sucesso`);
-    }
-
+    document.location="index.html"
+}
+ 
 }
