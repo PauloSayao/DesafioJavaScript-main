@@ -33,6 +33,8 @@ function SetCarToCompare(el, carClass) {
     if (carClass instanceof Car) {
         if (el.checked) {
             carArr.push(carClass)
+            console.log(el);
+            
         } else {
             let index = GetCarArrPosition(carArr, carClass)
             carArr.splice(index, 1)

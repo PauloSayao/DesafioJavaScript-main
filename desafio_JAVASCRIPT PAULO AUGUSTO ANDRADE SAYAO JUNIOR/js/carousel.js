@@ -4,8 +4,6 @@
 
 //Array storage class
 let carouselArr = [];
-
-
 //class Carousel
 class Carousel {
     constructor(imagem, texto, link) {
