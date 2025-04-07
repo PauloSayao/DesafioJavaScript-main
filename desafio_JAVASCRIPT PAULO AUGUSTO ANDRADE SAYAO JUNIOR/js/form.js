@@ -4,20 +4,20 @@
 class contato {
     constructor(nome, email, telefone, mContato, mensagem) {
         this.nome = nome,
-        this.email = email,
-        this.telefone = telefone,
-        this.mContato = mContato,
-        this.mensagem = mensagem;
+            this.email = email,
+            this.telefone = telefone,
+            this.mContato = mContato,
+            this.mensagem = mensagem;
     }
-dados(){
-    return {
-        "nome": this.nome,
-        "email": this.email,
-        "telefone": this.telefone,
-        "contato":this.mContato,
-        "comentario": this.mensagem
+    dados() {
+        return {
+            "nome": this.nome,
+            "email": this.email,
+            "telefone": this.telefone,
+            "contato": this.mContato,
+            "comentario": this.mensagem
+        }
     }
-}
 }
 
 function Post(form) {
@@ -28,11 +28,11 @@ function Post(form) {
         form.elements.namedItem("contato").value,
         form.elements.namedItem("comentario").value,
     )
-if (data.mContato == 1) {
-    alert("Selecione o motivo do seu contato")
-    return
-}
-Enviar(data)
+    if (data.mContato == 1) {
+        alert("Selecione o motivo do seu contato")
+        return
+    }
+    Enviar(data)
 }
 
 function Enviar(pessoa) {
@@ -41,7 +41,16 @@ function Enviar(pessoa) {
 
     if (nome != "") {
         alert(`Obrigado sr(a) ${pessoa.nome} os seus dados foram encaminhados com sucesso`);
-    document.location="index.html"
+        document.location = "index.html"
+    }
+
 }
- 
+
+function removeDisabled(el){ 
+    if (el.checked) {
+    document.getElementById("btnContato").disabled=false
+    } else{
+        document.getElementById("btnContato").disabled=true
+    }
+
 }

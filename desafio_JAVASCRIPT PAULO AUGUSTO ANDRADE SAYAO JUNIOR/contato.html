@@ -56,7 +56,7 @@
                                 href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">Termos e Condições</a>
                         </p>
                         <div class="checkbox1">
-                            <input type="checkbox" name="" id="contrato" required>
+                            <input onclick="removeDisabled(this)" type="checkbox" name="" id="contrato" required>
                             Sim. Li e concordo com os Termos e Condições.*
                         </div>
 
@@ -67,7 +67,7 @@
 
 
                 </form>
-                <button id="btnContato" type="submit">Enviar</button>
+                <button  id="btnContato" type="submit" class="btnForm" disabled>Enviar</button>
             </div>
         </div>
     </main>
