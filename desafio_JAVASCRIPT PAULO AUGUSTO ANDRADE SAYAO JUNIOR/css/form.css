@@ -79,3 +79,6 @@ button {
     resize: none;
     outline: none;
 }
+.btnForm:disabled{
+    background-color: gray;
+}
