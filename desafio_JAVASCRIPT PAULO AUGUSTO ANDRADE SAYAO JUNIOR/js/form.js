@@ -46,11 +46,12 @@ function Enviar(pessoa) {
 
 }
 
-function removeDisabled(el){ 
+function removeDisabled(el) {
     if (el.checked) {
-    document.getElementById("btnContato").disabled=false
-    } else{
-        document.getElementById("btnContato").disabled=true
+        document.getElementById("btnContato").style.background='#1351d8'
+        document.getElementById("btnContato").disabled = false
+    } else {
+        document.getElementById("btnContato").disabled = true
     }
 
 }

@@ -14,10 +14,7 @@ select.fordform {
     height: 36px;
     color: #807d7d;
 }
-.btnform:disabled{
-    background-color: #807d7d;
-    color: #807d7d;
-}
+
 
 input:focus-visible {
     outline: none;
