@@ -146,6 +146,7 @@ button {
     border-radius: 0.5rem;
 }
 
+
 #carousel-title a {
     color: navy;
 }
@@ -188,5 +189,6 @@ button {
     #carousel img {
         width: 80vw;
         height: 80%;
+
     }
 }

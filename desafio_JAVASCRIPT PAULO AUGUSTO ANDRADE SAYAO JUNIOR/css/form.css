@@ -82,3 +82,6 @@ button {
 .btnForm:disabled{
     background-color: gray;
 }
+.btnForm:disabled:hover{
+    background-color: rgb(92, 92, 92);
+}
