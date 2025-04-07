@@ -51,6 +51,7 @@ function removeDisabled(el) {
         document.getElementById("btnContato").style.background='#1351d8'
         document.getElementById("btnContato").disabled = false
     } else {
+        document.getElementById("btnContato").style.background='#808080'
         document.getElementById("btnContato").disabled = true
     }
 
